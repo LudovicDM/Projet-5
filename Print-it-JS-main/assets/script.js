@@ -17,8 +17,6 @@ const slides = [
 	}
 ]
 
-// Eléments HTML
-
 const arrow = document.querySelector(".arrow");
 const left = document.querySelector(".arrowLeft");
 const right = document.querySelector(".arrowRight");
@@ -26,11 +24,8 @@ const image = document.querySelector(".banner-img");
 const tagLine = document.getElementById("tagLine");
 const dots = document.querySelector(".dots");
 
-// Position
-
 let position = 0;
 
-//boucle
 
 for(let i= 0; i<slides.length; i++){
 	const dot =document.createElement("div")
@@ -54,9 +49,8 @@ function dotChange(){
 		console.log(allDots[position])
 }
 
-//event click
 right.addEventListener('click', slideRight)
-console.log('right ok')
+console.log('ok')
 function slideRight() {
 	position++;
 	if (position == slides.length) {
@@ -68,7 +62,7 @@ function slideRight() {
 }
 
 left.addEventListener('click', slideLeft);
-console.log('left ok');
+console.log('ok');
 function slideLeft() {
 	position--;
 	if (position < 0) {
