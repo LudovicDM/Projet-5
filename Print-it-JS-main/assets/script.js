@@ -17,19 +17,20 @@ const slides = [
 	}
 ]
 
-// Rattacher les éléments HTML
-//ARROW SLIDE
+// Eléments HTML
+
 const arrow = document.querySelector(".arrow");
 const left = document.querySelector(".arrowLeft");
 const right = document.querySelector(".arrowRight");
-const tagLine = document.getElementById("tagLine");
 const image = document.querySelector(".banner-img");
-//DOTS SLIDES
 const dots = document.querySelector(".dots");
 
-//initial position 
+// Position
+
 let position = 0;
-//boucle for
+
+//boucle
+
 for(let i= 0; i<slides.length; i++){
 	const dot =document.createElement("div")
 	dot.classList.add("dot")
