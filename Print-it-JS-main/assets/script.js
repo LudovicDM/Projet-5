@@ -23,6 +23,7 @@ const arrow = document.querySelector(".arrow");
 const left = document.querySelector(".arrowLeft");
 const right = document.querySelector(".arrowRight");
 const image = document.querySelector(".banner-img");
+const tagLine = document.getElementById("tagLine");
 const dots = document.querySelector(".dots");
 
 // Position
