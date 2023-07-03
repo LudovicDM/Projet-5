@@ -1,22 +1,4 @@
-const slides = [
-  {
-    image: "slide1.jpg",
-    tagLine: "Impressions tous formats <span>en boutique et en ligne</span>",
-  },
-  {
-    image: "slide2.jpg",
-    tagLine:
-      "Tirages haute définition grand format <span>pour vos bureaux et events</span>",
-  },
-  {
-    image: "slide3.jpg",
-    tagLine: "Grand choix de couleurs <span>de CMJN aux pantones</span>",
-  },
-  {
-    image: "slide4.png",
-    tagLine: "Autocollants <span>avec découpe laser sur mesure</span>",
-  },
-];
+import { slides } from "./data.js";
 
 const arrow = document.querySelector(".arrow");
 const left = document.querySelector(".arrowLeft");
@@ -45,11 +27,11 @@ function dotChange() {
     }
   });
 
-  console.log(allDots[position]);
+  // console.log(allDots[position]);
 }
 
 right.addEventListener("click", slideRight);
-console.log("ok");
+// console.log("ok");
 function slideRight() {
   position++;
   if (position == slides.length) {
@@ -61,7 +43,7 @@ function slideRight() {
 }
 
 left.addEventListener("click", slideLeft);
-console.log("ok");
+// console.log("ok");
 function slideLeft() {
   position--;
   if (position < 0) {
