@@ -17,21 +17,14 @@ for (let i = 0; i < slides.length; i++) {
   }
   dots.appendChild(dot);
 }
-function dotChange() {
-  const allDots = document.querySelectorAll(".dot");
-  allDots.forEach((dot, index) => {
-    if (position === index) {
-      dot.classList.add("dot_selected");
-    } else {
-      dot.classList.remove("dot_selected");
-    }
-  });
 
-  // console.log(allDots[position]);
-}
+// console.log(allDots[position]);
 
 right.addEventListener("click", slideRight);
-// console.log("ok");
+left.addEventListener("click", slideLeft);
+
+// FUNCTION //
+
 function slideRight() {
   position++;
   if (position == slides.length) {
@@ -42,8 +35,6 @@ function slideRight() {
   dotChange();
 }
 
-left.addEventListener("click", slideLeft);
-// console.log("ok");
 function slideLeft() {
   position--;
   if (position < 0) {
@@ -52,4 +43,15 @@ function slideLeft() {
   image.src = `./assets/images/slideshow/${slides[position].image}`;
   tagLine.innerHTML = slides[position].tagLine;
   dotChange();
+}
+
+function dotChange() {
+  const allDots = document.querySelectorAll(".dot");
+  allDots.forEach((dot, index) => {
+    if (position === index) {
+      dot.classList.add("dot_selected");
+    } else {
+      dot.classList.remove("dot_selected");
+    }
+  });
 }
