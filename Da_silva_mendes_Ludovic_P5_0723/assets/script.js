@@ -29,8 +29,8 @@ function slideRight() {
   if (position == slides.length) {
     position = 0;
   }
-  image.src = `./assets/images/slideshow/${slides[position].image}`;
   tagLine.innerHTML = slides[position].tagLine;
+  image.src = `./assets/images/slideshow/${slides[position].image}`;
   dotChange();
 }
 
@@ -39,8 +39,8 @@ function slideLeft() {
   if (position < 0) {
     position = slides.length - 1;
   }
-  image.src = `./assets/images/slideshow/${slides[position].image}`;
   tagLine.innerHTML = slides[position].tagLine;
+  image.src = `./assets/images/slideshow/${slides[position].image}`;
   dotChange();
 }
 
