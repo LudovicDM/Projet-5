@@ -1,5 +1,7 @@
 import { slides } from "./data.js";
 
+// VARIABLES //
+
 const arrow = document.querySelector(".arrow");
 const left = document.querySelector(".arrowLeft");
 const right = document.querySelector(".arrowRight");
@@ -8,6 +10,10 @@ const tagLine = document.getElementById("tagLine");
 const dots = document.querySelector(".dots");
 
 let position = 0;
+
+
+
+// LOOP //
 
 for (let i = 0; i < slides.length; i++) {
   const dot = document.createElement("div");
