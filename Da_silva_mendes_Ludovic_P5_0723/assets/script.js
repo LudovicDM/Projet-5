@@ -18,7 +18,6 @@ for (let i = 0; i < slides.length; i++) {
   dots.appendChild(dot);
 }
 
-// console.log(allDots[position]);
 
 right.addEventListener("click", slideRight);
 left.addEventListener("click", slideLeft);
